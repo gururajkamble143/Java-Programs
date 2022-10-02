@@ -1,0 +1,18 @@
+package String;
+
+public class N_equal_parts 
+{
+	public static void main(String[] args)
+	{
+		String str="I am gonna be the hokage some day";
+		int len=str.length();
+		
+		String[] words=str.split("w");
+		
+		for(String w:words)
+		{
+			System.out.println(w);
+		}
+		
+	}
+}

@@ -1,0 +1,31 @@
+package String;
+
+public class String_functions 
+{
+	public static void main(String[] args)
+	{
+		String str = "Spark";
+		System.out.println(str.charAt(4));
+		
+		String str1 = "java";
+		System.out.println(str1.equalsIgnoreCase("java"));
+		
+		String s1 = "Count me";
+		System.out.println(s1.length());
+		
+		String s2 = "Change me";
+		System.out.println(s2.replace("Me", "You"));
+		
+		String s3 = "0123456789";
+		System.out.println(s3.substring(4));
+		
+		String s4 = "QWERTY";
+		System.out.println(s4.toLowerCase());
+		
+		String s5 = "qwerty";
+		System.out.println(s5.toUpperCase());
+		
+		String s6 = "    HERO     ";
+		System.out.println(s6.trim());
+	}
+}

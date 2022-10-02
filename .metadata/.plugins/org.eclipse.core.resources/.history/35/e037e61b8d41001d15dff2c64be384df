@@ -1,0 +1,16 @@
+package String;
+
+public class Duplicate_character 
+{
+	public static void main(String[] args)
+	{
+		String str = "Gururaj";
+		char ch;
+		
+		for(int i=0;i<str.length();i++)
+		{
+			ch = str.charAt(i);
+		}
+		System.out.println("ch"+ch);
+	}
+}

@@ -1,0 +1,26 @@
+package String;
+
+public class Duplicate_character 
+{
+	public static void main(String[] args)
+	{
+		String str = "Gururaj";
+		char ch;
+		int count=1;
+		int i;
+		
+		for(i=0;i<str.length();i++)
+		{
+			ch = str.charAt(i);
+		}
+		if(str.charAt(i)==str.charAt(i+1))
+		{
+			count++;
+		}
+		if(count>1)
+		{
+			System.out.println("Duplicate character = "+str.charAt(i));
+		}
+		
+	}
+}

@@ -1,0 +1,38 @@
+package Constructor;
+
+class cube
+{
+	int side;
+	
+	public 
+	cube()      //default constructor
+	{
+		side=0;
+	}
+	cube(int s)      //parameterized constructor
+	{
+		side=s;
+	}
+	cube(cube cu)       //Copy constructor
+	{
+		side=cu.side;
+	}
+	public String toString()
+	{
+		return "\n cube = "+side*side*side;
+	}
+}
+
+public class Volume_of_cube 
+{
+	public static void main(String[] args)
+	{
+		cube C1=new cube();
+		cube C2=new cube(3);
+		cube C3=new cube(C2);
+		
+		System.out.println(C1);
+		System.out.println(C2);
+		System.out.println(C3);
+	}
+}

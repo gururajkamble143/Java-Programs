@@ -1,0 +1,43 @@
+package Inheritence;
+
+class Brand
+{
+	protected
+	int car_no;
+	String car_name;
+	
+	public
+	Brand(int x, String n)
+	{
+		car_no=x;
+		car_name=n;			
+	}
+}
+public class Car.java extends Brand
+{
+	private
+	String car_model;
+	int car_price;
+	
+	public
+	Brand(int x, String n,String d,int s)
+	{
+		super(x,n);
+		car_model=d;
+		car_price=s;
+	}	
+	void show()
+	{
+		System.out.println("Car no = "car_no);
+		System.out.println("Car name = "+car_name);
+		System.out.println("Car model = "+car_model);
+		System.out.println("Car Price = "+car_price);
+	}
+	public static void main(String[] args)
+	{
+		Brand b=new Brand(007,"McLaren","SKODA",500000);
+		b.show();
+	}
+}
+
+

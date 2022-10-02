@@ -1,0 +1,11 @@
+package String;
+
+public class Remove_whitespace 
+{
+	public static void main(String[] args)
+	{
+		String str = "     I    ";
+		
+		System.out.println(str.trim());
+	}
+}

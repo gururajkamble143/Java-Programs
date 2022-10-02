@@ -1,0 +1,29 @@
+package String;
+
+public class Duplicate_word 
+{
+	public static void main(String[] args)
+	{
+		String str = "powerful people comes from powerful places powerful people make places powerful";
+		int count=1;
+		int i;
+		
+		String word[]=str.split(" ");
+		
+		System.out.println("Duplicate words in the string are as below = ");
+		for(i=0;i<word.length;i++);
+		{
+			count=1;
+			for(int j= i+1 ;j<word.length;j++)
+			{
+				if(word[i].equals(word[j]))
+				{
+					count++;
+					word[j]="0";
+				}
+			}
+			if(count>1)
+				System.out.println(word[i]);
+		}
+	}
+}

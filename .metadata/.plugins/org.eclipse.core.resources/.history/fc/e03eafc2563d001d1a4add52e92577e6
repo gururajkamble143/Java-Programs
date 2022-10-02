@@ -1,0 +1,25 @@
+
+public class ST_Employee 
+{
+	int eid;
+	String name;
+	static String c_name="Spark";
+	
+	public void show()
+	{
+		System.out.println("eid = "+eid+"e_name = "+name+"company name = "+c_name);
+	}
+
+public static void main(String[] args)
+{
+	ST_Employee se1=new ST_Employee();
+	se1.eid=100;
+	se1.name="Guru";
+	se1.show();
+	
+	ST_Employee se2=new ST_Employee();
+	se2.eid=101;
+	se2.name="omi";
+	se2.show();
+}
+}

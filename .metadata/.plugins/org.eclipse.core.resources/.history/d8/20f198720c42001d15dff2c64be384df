@@ -1,0 +1,26 @@
+package String;
+
+public class Duplicate_word 
+{
+	public static void main(String[] args)
+	{
+		String str = "guru guru";
+		int count=1;
+		
+		String word[]=str.split("");
+		System.out.println("Duplicate words in the string are as below = ");
+		for(int i=0;i<word.length;i++);
+		{
+			for(int j= i+1 ;j<word.length;j++)
+			{
+				if(word[i]==word[j])
+				{
+					count++;
+					word[j]="0";
+				}
+			}
+			if(count>1 && word[i]!="0")
+				System.out.println(word[i]);
+		}
+	}
+}

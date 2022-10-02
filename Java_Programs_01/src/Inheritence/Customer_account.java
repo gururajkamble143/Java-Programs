@@ -1,0 +1,57 @@
+package Inheritence;
+
+import java.util.Scanner;
+
+interface Account
+{
+	float interest = 7.8f;
+	void set(double acc_no, double balance);
+	void display();
+}
+interface Person
+{
+	void store(String name);
+	void disp();
+}
+
+public class Customer_account implements Account ,Person
+{
+	String name;
+	double acc_no, balance;
+	
+	public void set(double acc_no, double balance)
+	{
+		this.acc_no=acc_no;
+	}
+	public void display()
+	{
+		System.out.println("Account number = "+acc_no);
+		System.out.println("Balance = "+balance);
+		System.out.println("Intrest rate = "+interest);
+	}
+	public void store(String name)
+	{
+		this.name=name;
+	}
+	public void disp()
+	{
+		System.out.println("Name = "+name);
+	}
+	public static void main(String[] args)
+	{
+		Customer_account c=new Customer_account();
+		Scanner input=new Scanner(System.in);
+		
+		System.out.println("Enter customer details : ");
+		System.out.print("name = ");
+		c.name = input.next();
+		System.out.print("Account number = ");
+		c.acc_no = input.nextDouble();
+		System.out.print("Balance = ");
+		c.balance = input.nextDouble();
+		
+		System.out.println("\n Details of Customer : ");
+		c.disp();
+		c.display();
+	}
+}

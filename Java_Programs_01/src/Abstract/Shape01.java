@@ -1,0 +1,86 @@
+package Abstract;
+
+public abstract class Shape01 
+
+{
+	protected double pi = 3.14;
+	protected double radius;
+	protected double height;
+	protected double slant;
+	
+	public void setvalues(double radius, double height, double slant)
+	{
+		this.radius=radius;
+		this.height=height;
+		this.slant=slant;
+	}
+	public double getradius()
+	{
+		return radius;
+	}
+	public double getheight()
+	{
+		return height;
+	}
+	public double getslant()
+	{
+		return slant;
+	}
+	public abstract double getarea();
+	public abstract double getvolume(); 
+}
+class Sphere extends Shape01
+{
+	public double getarea()
+	{
+		return 4 * pi * radius * radius;
+	}
+	public double getvolume()
+	{
+		return (4 / 3) * pi * radius * radius * radius;
+	}
+}
+class cone extends Shape01
+{
+	public double getarea()
+	{
+		return pi * radius * radius + pi * radius * slant;
+	}
+	public double getvolume()
+	{
+		return (pi * radius * radius * height) / 3;
+	}
+}
+class cylinder extends Shape01
+{
+	public double getarea()
+	{
+		return 2 * pi * radius * (height + radius);
+	}
+	public double getvolume()
+	{
+		return pi * radius * radius * height;
+	}
+}
+class Area_volume
+{
+	public static void main(String[] args)
+	{
+		Shape01 shape;
+		Sphere S=new Sphere();
+		shape=S;
+		shape.setvalues(2, 4, 6);
+		System.out.println("Area of sphere = "+shape.getarea());
+		System.out.println("Volume of sphere = "+shape.getvolume());
+		cone C=new cone();
+		shape=C;
+		shape.setvalues(4, 5, 6);
+		System.out.println("Area of cone = "+shape.getarea());
+		System.out.println("Volume of cone = "+shape.getvolume());
+		cylinder L=new cylinder();
+		shape=L;
+		shape.setvalues(5, 4, 8);
+		System.out.println("Area of cylinder = "+shape.getarea());
+		System.out.println("Volume of cylinder = "+shape.getvolume());
+	}
+}

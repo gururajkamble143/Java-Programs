@@ -1,0 +1,28 @@
+package Arrays;
+
+public class Rectangle1 
+{
+	protected int lenght;
+	protected int bredth;
+	
+	public Rectangle1(int l,int b)
+	{
+		lenght=l;
+		bredth=b;
+	}
+}
+class Area
+{
+	public static void main(String[] args)
+	{
+		Rectangle1[] area=new Rectangle1[3];
+		area[0]=new Rectangle1(2,4);
+		area[1]=new Rectangle1(4,6);
+		area[2]=new Rectangle1(7,5);
+		
+		for(int i=0;i<3;i++)
+		{
+			System.out.println("Area of Rectangle is = "+area[0].lenght*area[0].bredth);
+		}
+	}
+}

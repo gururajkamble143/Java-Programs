@@ -1,0 +1,13 @@
+package String;
+
+public class Frequency_of_characters 
+{
+	public static void main()
+	{
+		String str = "I Am Hero";
+		int[] frequency = new int [str.length()];
+		System.out.println("Entered String is = "+str);
+		
+		
+	}
+}

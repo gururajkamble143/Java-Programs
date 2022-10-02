@@ -1,0 +1,24 @@
+package Abstract;
+
+abstract class Abstracta
+{
+	abstract void callme();
+	public void normal()
+	{
+		System.out.println("It is a concrete method");
+	}
+}
+
+public class Abstractb extends Abstracta 
+{
+	void callme()
+	{
+		System.out.println("This is call me");
+	}
+	public static void main(String[] args)
+	{
+		Abstractb obj=new Abstractb();
+		obj.callme();
+		normal();
+	}
+}

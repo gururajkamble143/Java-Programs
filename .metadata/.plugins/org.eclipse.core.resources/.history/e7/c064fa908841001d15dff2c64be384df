@@ -1,0 +1,13 @@
+package String;
+
+public class Reverse_string 
+{
+	public static void main(String[] args)
+	{
+		String str="GURURAJ";
+		
+		str.length();
+		
+		System.out.print("lenght = "+str.length());
+	}
+}

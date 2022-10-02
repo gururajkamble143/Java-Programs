@@ -1,0 +1,22 @@
+package String;
+
+public class Reapeting_sequence_string 
+{
+	public static void main(String[] args)
+	{
+		String str = "traningtrain";
+		String repeat=" ";
+		String common=" ";
+		int len=str.length();
+		int temp=0,n;
+		
+		for(int i=0;i<len;i++)
+		{
+			for(int j=i+1;j<len;j++)
+			{
+				String x=common(str.substring(i,n),str.substring(j,n));
+				if()
+			}
+		}
+	}
+}

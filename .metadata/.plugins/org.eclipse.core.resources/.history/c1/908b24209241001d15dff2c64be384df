@@ -1,0 +1,29 @@
+package String;
+
+public class Duplicate_character 
+{
+	public static void main(String[] args)
+	{
+		String str = "Gururaj kamble";
+		int count=1;
+		
+		char String[]= str.toCharArray(); 
+        System.out.println("Duplicate characters in a given string: ");
+        
+        System.out.println(str.length());
+        
+        for(int i=0;i<str.length();i++)
+        {
+        	for(int j=i+1;j<str.length();j++)
+        	{
+        		if(String[i] == String[j] && String[i] != ' ')
+        		{
+        			count++;
+        			String[j]='0';
+        		}
+        	}
+        	if(count > 1 && String[i] != '0' && String[i]!= ' ')  
+                System.out.println(String[i]);
+        }
+	}
+}

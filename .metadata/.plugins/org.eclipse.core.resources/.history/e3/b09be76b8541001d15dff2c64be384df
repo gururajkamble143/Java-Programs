@@ -1,0 +1,10 @@
+package String;
+
+public class Largest_and_smallest_word 
+{
+	public static void main(String[] args)
+	{
+		String str="I am gonna be the Hokage some day";
+		String word=" ", small=" ", large=" ";
+	}
+}

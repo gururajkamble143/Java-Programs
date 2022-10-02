@@ -1,0 +1,62 @@
+package String;
+
+public class String_comparison 
+{
+	public static void main(String[] args)
+/*	{
+		String s="Hell";
+		String s1="Hello";
+		String s2="Hello";
+		
+		if(s1.equals(s2))
+		{
+			System.out.println("True");
+		}
+		else
+		{
+			System.out.println("False");
+		}
+		if(s.equals(s1))
+		{
+			System.out.println("True");
+		}
+		else
+		{
+			System.out.println("False");
+		}
+	}
+	
+		String s11="Java";
+		String s22="Java";
+		String s33=new String ("java");
+		{
+		
+		if(s11==s22)
+		{
+			System.out.println("True");
+		}
+		else
+		{
+			System.out.println("False");
+		}
+		if(s11==s33)
+		{
+			System.out.println("True");
+		}
+		else
+		{
+			System.out.println("False");
+		}
+	}*/
+{
+	
+	String str1="Abhi";
+	String str2="viraj";
+	String str3="Abhi";
+	
+	System.out.println(str1.compareTo(str2));
+	System.out.println(str1.compareTo(str3));
+	System.out.println(str2.compareTo(str1));
+
+}
+}

@@ -1,0 +1,16 @@
+package String;
+
+public class Seprate_the_character_from_String 
+{
+	public static void main(String[] args)
+	{
+		String str="Guru";
+		
+		System.out.println(str);
+		
+		for(int i=0;i<=str.lenght();i++)
+		{
+			System.out.println(str.charAt(i));
+		}
+	}
+}
